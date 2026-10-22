@@ -1,0 +1,125 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: var(--border-width) solid var(--color-border);
+  background: var(--color-white-alpha);
+  backdrop-filter: blur(0.875rem);
+
+  &__inner {
+    min-height: var(--header-height-desktop);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+  }
+
+  &__menu-button {
+    display: none;
+    padding: var(--space-3);
+    border: 0;
+    background: transparent;
+    color: var(--color-primary);
+    cursor: pointer;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.45rem;
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+
+    > a:not(.button) {
+      position: relative;
+      padding-block: var(--space-3);
+      text-decoration: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 100%;
+        bottom: 0.4rem;
+        left: 0;
+        height: var(--border-width);
+        background: var(--color-primary);
+        transition: var(--transition-default);
+      }
+
+      &:hover::after {
+        right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 56.25rem) {
+    &__inner {
+      min-height: 5.125rem;
+    }
+
+    &__navigation {
+      gap: var(--space-3);
+      font-size: 0.63rem;
+    }
+  }
+
+  @media (max-width: 40rem) {
+    &__inner {
+      min-height: var(--header-height-mobile);
+    }
+
+    .logo {
+      width: 5.75rem;
+
+      strong {
+        font-size: 2.25rem;
+      }
+    }
+
+    &__menu-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__navigation {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      padding: var(--space-4) 1.25rem 1.5rem;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.3rem;
+      border-bottom: var(--border-width) solid var(--color-border);
+      background: var(--color-surface);
+      box-shadow: 0 0.9375rem 1.875rem var(--color-shadow);
+
+      &--open {
+        display: flex;
+      }
+
+      > a:not(.button) {
+        padding-block: 0.8rem;
+        font-size: 12.8px;
+
+        &::after {
+          bottom: 0.3rem;
+        }
+      }
+
+      .whatsapp-button {
+        justify-content: center;
+        margin-top: var(--space-2);
+      }
+    }
+  }
+}

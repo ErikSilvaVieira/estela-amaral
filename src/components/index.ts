@@ -1,0 +1,9 @@
+export { Anniversary } from "./Anniversary";
+export { Benefits } from "./Benefits";
+export { Catalog } from "./Catalog";
+export { Collections } from "./Collections";
+export { Footer } from "./Footer";
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { Logo } from "./Logo";
+export { WhatsAppButton } from "./WhatsAppButton";

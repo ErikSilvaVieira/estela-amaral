@@ -1,0 +1,166 @@
+.footer {
+  position: relative;
+  padding: 3rem 0 var(--space-4);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  color: var(--color-white);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.25fr repeat(4, minmax(0, 1fr));
+    gap: var(--space-6);
+    align-items: start;
+
+    > .logo {
+      min-width: 0;
+    }
+  }
+
+  &__column {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+
+    strong {
+      margin-bottom: 0.4rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    a,
+    p {
+      margin: 0;
+      color: var(--color-soft-pink);
+      font-size: 0.75rem;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+
+    a {
+      width: 2.125rem;
+      height: 2.125rem;
+      display: grid;
+      place-items: center;
+      border: var(--border-width) solid var(--color-white-alpha);
+      border-radius: 50%;
+      color: var(--color-white);
+    }
+
+    svg {
+      width: 1.0625rem;
+      height: 1.0625rem;
+    }
+  }
+
+  &__mobile-links {
+    display: none;
+  }
+
+  &__copyright {
+    margin: var(--space-6) 0 0;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-soft-pink);
+  }
+
+  &__floating-whatsapp {
+    position: fixed;
+    z-index: 25;
+    right: 1.375rem;
+    bottom: 1.25rem;
+    width: 3.625rem;
+    height: 3.625rem;
+    display: grid;
+    place-items: center;
+    border: 0.25rem solid var(--color-white);
+    border-radius: 50%;
+    background: var(--color-whatsapp);
+    color: var(--color-white);
+    box-shadow: 0 0.375rem 1.25rem #0003;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+
+    svg {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+  }
+
+  @media (max-width: 56.25rem) {
+    &__grid {
+      grid-template-columns: 1.4fr repeat(4, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+  }
+
+  @media (max-width: 40rem) {
+    padding-top: 1.5rem;
+
+    &__grid {
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: var(--space-4);
+    }
+
+    &__column {
+      display: none;
+
+      &--social {
+        display: flex;
+      }
+    }
+
+    &__mobile-links {
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-4);
+
+      a {
+        color: var(--color-soft-pink);
+        font-size: 0.62rem;
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    &__copyright {
+      margin-top: 1.25rem;
+      padding-inline: var(--space-4);
+      font-size: 0.56rem;
+    }
+
+    &__floating-whatsapp {
+      right: 0.875rem;
+      bottom: 0.875rem;
+      width: 3.25rem;
+      height: 3.25rem;
+    }
+  }
+}

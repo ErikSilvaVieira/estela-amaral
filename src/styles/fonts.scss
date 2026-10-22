@@ -1,0 +1,28 @@
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+}
+
+h1,
+h2,
+h3,
+.logo,
+.anniversary,
+.catalog,
+.testimonials {
+  // Estilos específicos abaixo
+}
+
+h1,
+h2,
+h3,
+.logo strong,
+.logo span,
+.anniversary__title,
+.anniversary__seal,
+.catalog__art,
+.testimonials__card p,
+.testimonials__avatar {
+  font-family: var(--font-family-title);
+}

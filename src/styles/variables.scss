@@ -1,0 +1,75 @@
+:root {
+  // Cores principais
+  --color-primary: #ad3f70;
+  --color-primary-dark: #852b54;
+  --color-secondary: #d17b9c;
+  --color-background: #fff5f8;
+  --color-surface: #fff9fb;
+  --color-soft-pink: #f9dce8;
+  --color-soft-pink-two: #cf8bcf;
+  --color-text: #652540;
+  --color-text-soft: #85445f;
+  --color-border: #edc4d4;
+  --color-white: #ffffff;
+  --color-whatsapp: #2cb742;
+  --color-white-alpha: #ffffff99;
+  --color-shadow: #852b5417;
+  --color-shadow-dark: #1c000c;
+
+  // Fontes
+  --font-family-body: Arial, Helvetica, sans-serif;
+  --font-family-title: Georgia, "Times New Roman", serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  // Tamanhos de fontes
+  --font-size-xs: 10.88px;
+  --font-size-sm: 12.48px;
+  --font-size-md: 16px;
+  --font-size-lg: 28.8px;
+
+  // Layout
+  --container-width: 1180px;
+  --container-tablet: 760px;
+  --header-height-desktop: 96px;
+  --header-height-mobile: 74px;
+  --section-spacing: 56px;
+  --section-spacing-mobile: 35.2px;
+  --space-container: 40px;
+
+  // Espaçamentos
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 28px;
+  --space-6: 32px;
+
+  // Botões e elementos
+  --control-height: 44px;
+  --control-height-compact: 40px;
+  --radius-small: 4px;
+  --radius-medium: 10px;
+  --border-width: 1px;
+
+  // Ícones
+  --icon-size-xs: 12px;
+  --icon-size-sm: 18px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 28px;
+  --icon-size-benefit: 60px;
+
+  // Animações
+  --letter-spacing-small: 0.02em;
+  --transition-default: 0.2s ease;
+
+  // Compatibilidade com estilos antigos
+  --wine: var(--color-primary);
+  --wine-dark: var(--color-primary-dark);
+  --rose: var(--color-secondary);
+  --blush: var(--color-background);
+  --pink: var(--color-soft-pink);
+  --ink: var(--color-text);
+  --line: var(--color-border);
+  --white: var(--color-white);
+}

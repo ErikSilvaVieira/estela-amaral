@@ -1,0 +1,81 @@
+.logo {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-primary);
+  line-height: 1;
+  text-decoration: none;
+
+ &__main {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+  white-space: nowrap;
+
+
+    strong {
+      font-size: 44.8px;
+      font-weight: var(--font-weight-regular);
+      letter-spacing: -0.08em;
+    }
+
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    width: 100%;
+    margin-top: 0.35rem;
+
+    svg {
+      width: 0.65rem;
+      height: 0.65rem;
+      flex-shrink: 0;
+    }
+
+    small {
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      white-space: nowrap;
+    }
+  }
+
+  &--light {
+    color: var(--color-white);
+  }
+
+  @media (max-width: 640px) {
+    &__main {
+      gap: 0.4rem;
+
+      strong {
+        font-size: 36px;
+      }
+
+      span {
+        font-size: 10px;
+      }
+    }
+
+    &__description {
+      small {
+        font-size: 7px;
+      }
+    }
+  }
+}
