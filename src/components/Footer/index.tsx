@@ -1,4 +1,4 @@
-import { Camera, MessageCircle } from "@/lib/icons";
+import { MessageCircle } from "@/lib/icons";
 import { navigation, WHATSAPP_URL } from "@/lib/site-data";
 
 import { Logo } from "../Logo";
