@@ -35,7 +35,7 @@ export function Collections() {
             <p>{description}</p>
 
             <a className="button button--primary" href="#catalogo">
-              Ver {id} no catálogo
+              Confira o catálogo {id}
             </a>
           </article>
         ))}

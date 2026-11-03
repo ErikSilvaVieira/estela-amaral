@@ -50,6 +50,13 @@
     }
   }
 
+  &__column--social {
+  strong {  
+    width: 119px;
+    text-align: center;
+  }
+}
+
   &__socials {
     display: flex;
     flex-direction: row;
@@ -70,6 +77,19 @@
       height: 1.0625rem;
     }
   }
+
+  &__instagram-qr {
+  display: block;
+  width: 125px;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
 
   &__mobile-links {
     display: none;
@@ -119,9 +139,11 @@
     padding-top: 1.5rem;
 
     &__grid {
-      grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
-      gap: var(--space-4);
+              display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
     }
 
     &__column {

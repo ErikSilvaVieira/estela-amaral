@@ -43,7 +43,13 @@ export function Header() {
           aria-label="Navegação principal"
         >
           {navigation.map(({ href, label }) => (
-            <a key={href} href={href} onClick={closeMenu}>
+            <a
+              key={href}
+              href={href}
+              onClick={closeMenu}
+              target={label === "Nossa loja" ? "_blank" : undefined}
+              rel={label === "Nossa loja" ? "noopener noreferrer" : undefined}
+            >
               {label}
             </a>
           ))}

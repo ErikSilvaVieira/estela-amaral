@@ -4,7 +4,7 @@ import type { WhatsAppButtonProps } from "./types";
 
 import "./styles.scss";
 
-const WHATSAPP_URL = "https://wa.me/55SEUNUMERO";
+const WHATSAPP_URL = "https://wa.me/555491970301";
 
 export function WhatsAppButton({ compact = false }: WhatsAppButtonProps) {
   const label = compact ? "Falar no WhatsApp" : "Comprar pelo WhatsApp";

@@ -18,16 +18,12 @@ export function Catalog() {
             </p>
             <div className="catalog__actions">
               <a
-                className="button button--primary"
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noreferrer"
+                className="button button--outline"
+                href="/catalogo-aha.pdf"
+                download="catalogo-aha.pdf"
               >
-                Ver catálogo online
-              </a>
-              <a className="button button--outline" href="#catalogo">
                 <Download aria-hidden="true" />
-                Baixar PDF
+                Baixar Catálogo
               </a>
             </div>
           </div>

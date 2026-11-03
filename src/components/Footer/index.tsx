@@ -43,20 +43,19 @@ export function Footer() {
         <div className="footer__column footer__column--social">
           <strong>Siga-nos</strong>
 
-          <div className="footer__socials">
-            <a href="#" aria-label="Instagram">
-              <Camera aria-hidden="true" />
-            </a>
-
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-            >
-              <MessageCircle aria-hidden="true" />
-            </a>
-          </div>
+          <a
+            href="https://www.instagram.com/lojaestelaamarall/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Acessar Instagram da Estela Amaral"
+          >
+            <img
+              src="/images/qr-instagram.png"
+              alt="QR Code do Instagram da Estela Amaral"
+              className="footer__instagram-qr"
+              loading="lazy"
+            />
+          </a>
         </div>
       </div>
 
@@ -72,7 +71,7 @@ export function Footer() {
       </nav>
 
       <p className="footer__copyright">
-        ESTELA AMARAL - 2026 - TODOS OS DIREITOS RESERVADOS.
+        ESTELA AMARAL 2026 - TODOS OS DIREITOS RESERVADOS.
       </p>
 
       <a
